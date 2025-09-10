@@ -21,7 +21,7 @@ def test_mediana_error():
 
 # MODA
 def test_moda_happy_path():
-    assert estadistica.moda([1, 1, 2, 3]) == 5
+    assert estadistica.moda([1, 1, 2, 3]) == 1
     assert set(estadistica.moda([1, 2, 2, 3, 3])) == {2, 3}
 
 def test_moda_error():
