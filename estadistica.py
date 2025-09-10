@@ -35,3 +35,11 @@ def variance(lista):
 
 def ds(lista):
     return math.sqrt(variance(lista))
+
+def coef_variacion(lista):
+    if not lista:
+        raise ValueError("La lista no puede estar vacía")
+    m = media(lista)
+    if m == 0:
+        raise ValueError("La media es cero, el coeficiente de variación no está definido")
+    return (ds(lista) / m) * 100
