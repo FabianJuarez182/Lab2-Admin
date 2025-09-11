@@ -4,7 +4,7 @@ from collections import Counter
 def media(lista):
     if not lista:
         raise ValueError("La lista no puede estar vacía")
-    return 1
+    return sum(lista) / len(lista)
 
 def mediana(lista):
     if not lista:
